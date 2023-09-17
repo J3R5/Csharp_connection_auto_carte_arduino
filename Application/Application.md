@@ -27,6 +27,17 @@ La partie de connexion automatique possède
 
 ### Pilotage Led interne
 
+La zone du pilotage de la led interne contient 
+
+2 boutons :
+
+* 1 sert à envoyer un message pour allumer la led interne de l'arduino
+* 1 sert à envoyer un message pour éteindre la led interne de l'arduino
+
+1 textbox : 
+
+* Elle sert à afficher les erreurs potentiel de l'allumage de la communication ou a dire si un message à été envoyer
+ 
 ### Code 
 
 ~~~C++
