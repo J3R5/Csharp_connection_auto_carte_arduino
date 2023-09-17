@@ -1,0 +1,44 @@
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\bin\Debug\Led_1.exe.config
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\bin\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\bin\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.csproj.AssemblyReference.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.Arduino_Led.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.Properties.Resources.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.csproj.GenerateResource.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.csproj.CoreCompileInputs.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_1\Led_1\obj\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\bin\Debug\Led_1.exe.config
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\bin\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\bin\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.csproj.AssemblyReference.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.Arduino_Led.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.Properties.Resources.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.csproj.GenerateResource.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.csproj.CoreCompileInputs.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Led_2\Led_1\obj\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\bin\Debug\Led_1.exe.config
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\bin\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\bin\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.csproj.AssemblyReference.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.Arduino_Connexion.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.Properties.Resources.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.csproj.GenerateResource.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.csproj.CoreCompileInputs.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique\Led_1\obj\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\bin\Debug\Led_1.exe.config
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\bin\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\bin\Debug\Led_1.pdb
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.csproj.AssemblyReference.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.Arduino_Connexion.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.Properties.Resources.resources
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.csproj.GenerateResource.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.csproj.CoreCompileInputs.cache
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.exe
+C:\Users\cleme\Desktop\IUT\Informatique\arduino\Connection automatique 2\Led_1\obj\Debug\Led_1.pdb
