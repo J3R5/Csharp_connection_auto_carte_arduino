@@ -146,3 +146,13 @@ Le code suivant est dans le bouton de connexion automatique à une carte arduino
 ~~~
 
 La fonction possède 2 variables, Port_dispo qui est un tableaux qui contient tous les noms des différent port série disponible sur l'ordinateur et Verif qui est une variable qui contient la réponse envoyer par la carte arduino.
+
+Le début du programme commence par initialiser les variables et composants présent sur le form.
+
+On regarde d'abord si l'ordinateur à des port série sinon on affiche un message d'erreur dans la textbox d'erreur. 
+
+On rentre dans un boucle puis un try catch pour passer en revue touts les ports série trouvé en se connectant 1 à 1. On sort de la boucle si on est connecté à la carte ou si on a parcourue tous port existant.
+
+A chaque passage on tente d'ouvrir la connection puis d'envoyer un message ici Debut et on attend la réponse ensuite on traite la réponse avec un .Trim() puis on regarde si le message reçue est égale à celui qui doit normalement être envoyer si oui on a trouvé la carte arduino et la fonction s'arrête.
+
+Dans le cas d'une erreur de TimeOut ou non connection ou autre on les affiches dans la textbox d'erreur.
