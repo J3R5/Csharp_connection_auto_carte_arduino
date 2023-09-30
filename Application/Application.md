@@ -62,4 +62,87 @@ Avant de pouvoir utiliser l'application il faut initialiser le port série et le
 
 L'initialisation se fait dans le constructeur du WinForm avec les deux fonctions InitializeComponent() et Init_Port(). La deuxième fonction, créer un port série et régle son débit à 9600 bauds ainsi que son timeout à 2 second, il est importer d'avoir les timeouts pour ne pas rester bloquer dans la suite du programme. Il est possible de les diminuer ou les augmenter mais si on les diminue trop l'arduino n'aura plus le temps de répondre.
 
+### Code connexion :
 
+Le code suivant est dans le bouton de connexion automatique à une carte arduino.
+
+~~~C++
+
+        private void Arduino_COM_Click(object sender, EventArgs e)
+        {
+            /*
+             * Fonction de connexion a une
+             * arduino en testant les ports
+             * 1 à 1 sans système de verification
+             * a qui le système se connecte
+             * 
+             * Jérémy Clémente 10/06/2023
+             */
+
+            //Variable
+
+            string[] Port_Dispo;
+            int i;
+            string Verif;
+
+            //Initialisation
+
+            Port_Dispo = SerialPort.GetPortNames();
+            Verif = null;
+            i = 0;
+
+            COM_arduino_L.Text = "COMX";
+            Connexion_L.Text = "Ordinateur Non Connecté";
+            Nbre_COM_L.Text = $"Nombre port série : {Port_Dispo.Length}";
+            Connexion_Error_TB.Clear();
+
+            //Début
+
+            if (Port_Dispo.Length > 0)
+            { 
+                do
+                {
+                    try
+                    {
+                        Arduino.PortName = Port_Dispo[i];
+
+                        Arduino.Open();
+                        Arduino.WriteLine("Debut");
+                        Verif = Arduino.ReadLine();
+                        Verif = Verif.Trim();
+
+                        if (Verif == "7_seg")
+                        {
+                            Connexion_L.Text = "Ordinateur Connectée";
+                            COM_arduino_L.Text = Port_Dispo[i];
+                            Connexion_Error_TB.Clear();
+                        }
+                        else
+                        {
+                            Connexion_Error_TB.Text += $"Erreur : Mauvaise message : {Verif} ";
+                        }
+
+                    }   
+                    catch (Exception Error)
+                    {
+                       Connexion_Error_TB.Text += $"Erreur {Port_Dispo[i]} :  {Error.Message}" + Environment.NewLine;
+                    }
+
+                    Arduino.Close();
+
+                    i++;
+
+                } while (i < Port_Dispo.Length && Connexion_L.Text == "Ordinateur Non Connectée") ;
+
+            }
+            else
+            {
+                Connexion_Error_TB.Text += "Erreur : aucun port série détecté" + Environment.NewLine;
+            }
+
+            //Fin
+        }
+
+~~~
+
+La fonction possède 2 variables, Port_dispo qui est un tableaux qui contient tous les noms des différent port série disponible sur l'ordinateur et Verif qui est une variable qui contient la réponse envoyer par la carte arduino.
