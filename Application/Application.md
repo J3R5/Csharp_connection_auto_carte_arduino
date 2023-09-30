@@ -38,14 +38,28 @@ La zone du pilotage de la led interne contient
 
 * Elle sert à afficher les erreurs potentiel de l'allumage de la communication ou a dire si un message à été envoyer
  
-### Code 
+### Code initialisation :
+
+Avant de pouvoir utiliser l'application il faut initialiser le port série et les élements formulaire.
 
 ~~~C++
 
+        public Arduino_Connexion()
+        {
+            InitializeComponent();
+            Init_Port();
+        }
 
+        void Init_Port()
+        {
+            Arduino = new SerialPort();
+            Arduino.BaudRate = 9600;
+            Arduino.ReadTimeout = 2000;
+            Arduino.WriteTimeout = 2000;
+        }
 
 ~~~
 
-
+L'initialisation se fait dans le constructeur du WinForm avec les deux fonctions InitializeComponent() et Init_Port(). La deuxième fonction, créer un port série et régle son débit à 9600 bauds ainsi que son timeout à 2 second, il est importer d'avoir les timeouts pour ne pas rester bloquer dans la suite du programme. Il est possible de les diminuer ou les augmenter mais si on les diminue trop l'arduino n'aura plus le temps de répondre.
 
 
