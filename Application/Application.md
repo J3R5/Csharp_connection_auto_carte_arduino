@@ -155,4 +155,53 @@ On rentre dans un boucle puis un try catch pour passer en revue touts les ports 
 
 A chaque passage on tente d'ouvrir la connection puis d'envoyer un message ici Debut et on attend la réponse ensuite on traite la réponse avec un .Trim() puis on regarde si le message reçue est égale à celui qui doit normalement être envoyer si oui on a trouvé la carte arduino et la fonction s'arrête.
 
-Dans le cas d'une erreur de TimeOut ou non connection ou autre on les affiches dans la textbox d'erreur.
+Dans le cas d'une erreur de Timeout, non connection ou autre on les affiches dans la textbox d'erreur.
+
+La fonction affiche dans la groupe box de connexion le nombre de port COM trouvé si le pc est connecté à un port série et lequelle ainsi que les erreurs potentiel des autres port série en cas ou le PC n'es pas connecté.
+
+### Code led interne.
+
+Pour allumer et eteindre la led interne on va utilisé la fonction suivante.
+
+~~~C++
+
+        public void ArduinoMsg(string msg)
+        {
+            /*
+             * fonction pour envoie
+             * des message a l'arduino
+             * via communication série
+             * 
+             * Jérémy Clémente 10/08/2023
+             */
+
+            //Début
+
+            try
+            {
+                if (Connexion_L.Text == "Ordinateur Connectée")
+                {
+                    Arduino.Open();
+                    Arduino.WriteLine(msg);
+                    Arduino.Close();
+
+                    ON_OFF_TB.Text += $"Message envoyé {msg}" + Environment.NewLine;
+                }
+                else
+                {
+                    ON_OFF_TB.Text += "Carte non connecté" + Environment.NewLine;
+                }
+            }
+            catch (Exception Error)
+            {
+                ON_OFF_TB.Text += $"Erreur {Error.Message}" + Environment.NewLine;
+            }
+
+            //Fin
+        }
+
+~~~
+
+Cette fonction prend en parramètre le message à envoyer puis on regarde si on est connecté à la carte et si oui on essaye d'envoyer le message. En cas de carte non connecté ou d'erreur lors de l'envoie on l'affiche dans une textbox d'erreur. En cas de réussite d'envoie du message on ne précise que le message à été envoyer.
+
+
