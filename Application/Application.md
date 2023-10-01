@@ -204,4 +204,50 @@ Pour allumer et eteindre la led interne on va utilisé la fonction suivante.
 
 Cette fonction prend en parramètre le message à envoyer puis on regarde si on est connecté à la carte et si oui on essaye d'envoyer le message. En cas de carte non connecté ou d'erreur lors de l'envoie on l'affiche dans une textbox d'erreur. En cas de réussite d'envoie du message on ne précise que le message à été envoyer.
 
+#### Allumer/Eteindre la led
 
+Pour allumer et éteindre la led on va utiliser la fonction précédante dans les boutons ON/OFF.
+
+~~~C++
+
+        private void ON_BP_Click(object sender, EventArgs e)
+        {
+            /*
+             * fonction allumage une led
+             * sur arduino uno en 
+             * via communication série
+             * 
+             * Jérémy Clémente 10/08/2023
+             */
+
+            //Début
+
+            ArduinoMsg("ON");
+
+            //Fin
+        }
+
+        private void OFF_BP_Click(object sender, EventArgs e)
+        {
+            /*
+             * fonction éteindre une led
+             * sur arduino uno en 
+             * via communication série
+             * 
+             * Jérémy Clémente 10/08/2023
+             */
+
+            //Début
+
+            ArduinoMsg("OFF");
+
+            //Fin
+        }
+
+~~~
+
+Pour allumer le led on envoie le message ON et pour l'éteindre on envoie le message OFF.
+
+### Conclusion
+
+Voici la fin du markdown sur la partie de l'application WinForm C# pour aller voir le code dans la carte arduino il faut aller vois [ce markdown]().
